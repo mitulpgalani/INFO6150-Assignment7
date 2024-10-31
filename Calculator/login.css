@@ -1,0 +1,76 @@
+html, body, div, form, input, label {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#loginForm {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.error {
+    color: #d32f2f;
+    font-size: 0.8em;
+    height: 20px;
+    margin-top: 5px;
+}
+
+#loginButton {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #5c6bc0;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#loginButton:hover:not(:disabled) {
+    background-color: #3949ab;
+}
+
+#loginButton:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.container {
+    margin-top: 30px;
+}
